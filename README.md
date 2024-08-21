@@ -1,4 +1,4 @@
-# Ex.No: 01A PLOT A TIME SERIES DATA
+# Ex.No: 01A  PLOT A TIME SERIES DATA
 ###  Date: 
 
 # AIM:
@@ -11,8 +11,31 @@ To Develop a python program to Plot a time series data (population/ market price
 4. Plot the data according to need and can be altered monthly, or yearly.
 5. Display the graph.
 # PROGRAM:
+### Developed By: Harshavardhan
+### Register No: 212222240114
+ 
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
 
+file_path = 'infy_stock.csv'
+data = pd.read_csv(file_path)
 
+print(data.head)
+
+data['Date']=pd.to_datetime(data['Date'])
+
+data.set_index('Date',inplace=True)
+plt.plot(data.index,data['Trades'],label='temp')
+plt.title("Daily Minimum Trades")
+plt.xlabel("Date")
+plt.xticks(rotation=45)
+plt.ylabel("Trades")
+plt.grid(True)
+plt.legend()
+plt.show()
+
+```
 
 
 
@@ -23,7 +46,9 @@ To Develop a python program to Plot a time series data (population/ market price
 
 
 # OUTPUT:
-
+![OUTPUT](/1.png)
+![OUTPUT](/2.png)
+![OUTPUT](/graph.png)
 
 
 
