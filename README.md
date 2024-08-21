@@ -1,5 +1,8 @@
-# Ex.No: 01A  PLOT A TIME SERIES DATA
+## Developed By: Harshavardhan
+## Register No: 212222240114
 ##  Date: 
+
+# Ex.No: 01A  PLOT A TIME SERIES DATA
 
 # AIM:
 To Develop a python program to Plot a time series data (National stock exchange)
@@ -15,8 +18,7 @@ To Develop a python program to Plot a time series data (National stock exchange)
 
 
 # PROGRAM:
-## Developed By: Harshavardhan
-## Register No: 212222240114
+
  
 ```python
 import pandas as pd
