@@ -61,4 +61,4 @@ plt.show()
 
 
 # RESULT:
-Thus the python code has created  for plotting the time series of given data.
+Thus the python code has created  for plotting the time series of given data successfully.
